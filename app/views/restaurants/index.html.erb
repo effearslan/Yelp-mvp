@@ -18,7 +18,8 @@
         <td><%= restaurant.address %></td>
         <td><%= restaurant.category %></td>
         <td><%= restaurant.phone_number %></td>
-        <td><%= link_to 'Show', restaurant %></td>
+        <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
+        <td> <%= link_to "DELETE", restaurant_path(restaurant), method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
